@@ -73,3 +73,63 @@ Maze Explorer is an engaging terminal-based maze game where players navigate thr
 | T | Trap (avoid these!) |
 | # | Wall (you can't move through these) |
 
+## Customization
+
+From the Settings menu, you can:
+
+- Change difficulty level (Easy, Medium, Hard)
+- Adjust maze width (10-50)
+- Adjust maze height (10-30)
+
+Each difficulty level changes:
+- Number of required keys
+- Number of traps
+- Number of coins
+
+## Technical Details
+
+The game implements several interesting algorithms and techniques:
+
+- **Maze Generation**: Uses randomized depth-first search (recursive backtracking)
+- **Pathfinding**: Implements breadth-first search (BFS) for the hint system
+- **Terminal Coloring**: Uses ANSI escape codes for colorful display
+- **Event Handling**: Keyboard event handling for responsive controls
+
+## Code Structure
+
+- **MazeGame Class**: Main class that handles game logic
+  - `generate_maze()`: Creates a random maze using DFS
+  - `move_player()`: Handles player movement and interactions
+  - `solve_maze()`: Finds the shortest path to exit using BFS
+  - `print_maze()`: Renders the maze with colors
+  - `show_hint()`: Displays the next best move
+  - UI methods for menus and settings
+
+## Known Issues
+
+- Some terminal emulators may not display colors correctly
+- Game requires a terminal with at least 30 rows and 80 columns for optimal display
+- Keyboard library may require administrator privileges on some systems
+
+## Future Enhancements
+
+- [ ] Save/load game functionality
+- [ ] High score system
+- [ ] More maze generation algorithms
+- [ ] Additional game elements like teleporters
+- [ ] Sound effects (terminal bell)
+- [ ] More advanced enemy AI
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- Inspired by classic maze games
+- Thanks to the keyboard library developers
+- Special thanks to all contributors and testers
+
+---
+
+Enjoy exploring the maze! For issues or suggestions, please open an issue on GitHub.
