@@ -148,6 +148,7 @@ class MazeGame:
             self.required_keys = max(2, (self.width + self.height) // 20)
             trap_count = max(3, (self.width + self.height) // 12)
             coin_count = max(7, (self.width + self.height) // 7)
+# Added comment
         else:  # hard
             self.required_keys = max(3, (self.width + self.height) // 15)
             trap_count = max(5, (self.width + self.height) // 10)
