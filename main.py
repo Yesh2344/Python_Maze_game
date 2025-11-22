@@ -376,6 +376,7 @@ class MazeGame:
         keyboard.on_press_key("right", lambda _: self.handle_key("right"))
         keyboard.on_press_key("q", lambda _: self.handle_key("quit"))
         keyboard.on_press_key("r", lambda _: self.handle_key("restart"))
+# Added comment
         keyboard.on_press_key("h", lambda _: self.handle_key("hint"))
         
         try:
