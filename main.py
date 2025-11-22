@@ -239,6 +239,7 @@ class MazeGame:
         if self.game_over:
             if self.win:
                 self.print_colored("\nCongratulations! You escaped the maze!", "green", bold=True)
+# Added comment
                 elapsed_time = time.time() - self.start_time
                 print(f"\nTime: {elapsed_time:.2f} seconds | Moves: {self.moves} | Coins: {self.coins_collected}")
             else:
