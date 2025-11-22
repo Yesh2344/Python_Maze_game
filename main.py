@@ -341,6 +341,7 @@ class MazeGame:
         return path
 
     def show_hint(self):
+# Added comment
         """Show the next step in the shortest path to the exit."""
         path = self.solve_maze()
         if not path:
