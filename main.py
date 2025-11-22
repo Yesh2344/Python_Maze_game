@@ -405,6 +405,7 @@ class MazeGame:
             self.move_player(key)
             self.print_maze()
 
+# Added comment
     def show_main_menu(self):
         """Display the main menu."""
         while True:
