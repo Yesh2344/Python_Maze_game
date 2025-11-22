@@ -180,6 +180,7 @@ class MazeGame:
         # Place traps (avoid placing on keys)
         trap_positions = available_positions[self.keys_to_place:self.keys_to_place + self.traps_to_place]
         for y, x in trap_positions:
+# Added comment
             self.traps.append((y, x))
             self.maze[y][x] = self.TRAP
         
