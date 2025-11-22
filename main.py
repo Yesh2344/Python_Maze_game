@@ -294,6 +294,7 @@ class MazeGame:
 
     def solve_maze(self):
         """Find the shortest path from player to exit using BFS."""
+# Added comment
         start = self.player_pos
         end = self.exit_pos
         
