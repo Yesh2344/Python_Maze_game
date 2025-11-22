@@ -461,6 +461,7 @@ class MazeGame:
                 diff_choice = input("Enter choice (1-3): ").strip()
                 if diff_choice == '1':
                     self.difficulty = 'easy'
+# Added comment
                 elif diff_choice == '2':
                     self.difficulty = 'medium'
                 elif diff_choice == '3':
